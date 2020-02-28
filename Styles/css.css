@@ -1,0 +1,240 @@
+* {
+  list-style: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  cursor: none;
+}
+
+body {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: #eaeaea;
+  transition: opacity 500ms;
+}
+
+p {
+  margin: 50px 0 50px 0;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+video {
+  width: 60vw;
+  display: block;
+  margin: 2em auto;
+  padding: 20px;
+  border: 20px solid #eaeaea;
+  box-shadow: -3px -3px 7px #fff, 3px 3px 5px rgba(94, 104, 121, 0.7),
+    inset -3px -3px 7px #fff, inset 3px 3px 5px rgba(94, 104, 121, 0.712);
+}
+form {
+  display: inline-block;
+  width: 1000px;
+  padding: 30px;
+  background: #eaeaea;
+  margin: 50px;
+  box-shadow: 6px 6px 15px rgba(94, 104, 121, 0.4),
+    -6px -6px 15px rgba(255, 255, 255, 1);
+}
+
+form input[type="text"],
+input[type="submit"],
+textarea {
+  box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  height: 45px;
+}
+
+form input[type="submit"] {
+  box-shadow: 2px 2px 5px rgba(94, 104, 121, 0.4),
+    -2px -2px 5px rgba(255, 255, 255, 1);
+  display: inline-block;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  transition: ease-in-out 250ms;
+}
+
+form input[type="submit"]:hover {
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 1),
+    -2px -2px 5px rgba(94, 104, 121, 0.4);
+}
+
+form textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding-right: 5em;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 78px;
+  position: relative;
+}
+
+nav ul > li > a {
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease-in-out 250ms;
+}
+
+nav ul > li > a:hover {
+  color: black;
+}
+
+nav ul > li > a::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(180, 180, 180);
+  position: absolute;
+  top: 100px;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav ul > li > a:hover::before {
+  width: 100%;
+  background-color: black;
+}
+
+div > p {
+  font-size: 8em;
+  padding: 0 100px;
+}
+
+.w3-card {
+  margin: 5px 5px 20px 5px;
+  box-shadow: -3px -3px 10px #fff, 3px 3px 7px rgba(94, 104, 121, 0.3);
+}
+
+.w3-container {
+  padding: 1em;
+}
+
+.logoPlacement {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 300px;
+  float: left;
+}
+
+.cursor {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition-timing-function: ease-in-out;
+  animation: cursorAnim 0.5s infinite alternate;
+}
+
+.cursor::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  border: 2px solid rgb(180, 180, 180);
+  border-radius: 50%;
+  opacity: 0.5;
+  top: 32px;
+  left: 32px;
+}
+
+.expand {
+  animation: cursorAnim2 0.5s forwards;
+  border: 1px solid rgb(63, 63, 63);
+}
+
+.LowerText {
+  font-size: 2em;
+  margin: 0 150px;
+}
+
+.newMorphism {
+  color: #eaeaea;
+  font-size: 1.5em;
+  text-shadow: 10px 10px 15px rgba(94, 104, 121, 0.4),
+    -6px -6px 15px rgba(255, 255, 255, 1);
+}
+
+.newMorphism_Projets {
+  color: #eaeaea;
+  font-size: 1.2em;
+  display: inline-block;
+  text-shadow: 6px 6px 15px rgba(94, 104, 121, 0.4),
+    -6px -6px 15px rgba(255, 255, 255, 1);
+}
+
+.propos {
+  font-size: 1.8em;
+  margin: 0 3em 0 1em;
+}
+
+.imagePhoto {
+  width: 45vw;
+  float: left;
+  margin: 0 5em 3em 5em;
+}
+
+.center {
+  text-align: center;
+}
+
+.mySlide {display: none;}
+
+.slideshow-container {
+  max-width: 80vw;
+  position: relative;
+  margin: 3em auto;
+}
+
+@keyframes cursorAnim {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+}
