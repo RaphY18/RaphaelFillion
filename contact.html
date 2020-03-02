@@ -19,15 +19,16 @@
         <div class="logoPlacement">
             <a href="index.html"><img src="images/Logo_Website.png" alt="logo" class="logo"/></a>
         </div>
-        <nav>
-            <ul>
-                <li class="navbar"><a href="projets.html">Projets</a></li>
-                <li class="navbar"><a href="propos.html">À propos</a></li>
-                <li class="navbar"><a href="contact.html">Contact</a></li>
-                <li class="navbar"><a href="https://www.linkedin.com/in/rapha%C3%ABl-fillion-5224b0179/" target="_blank">Linkedin</a></li>
-                <li><img src="images/menu.svg" class="menu"></li>
-            </ul>
-        </nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="projets.html">Projets</a>
+              <a href="propos.html">À propos</a>
+              <a href="contact.html">Contact</a>
+              <a href="https://www.linkedin.com/in/rapha%C3%ABl-fillion-5224b0179/" target="_blank">Linkedin</a>
+            </div>
+          </div>
+          <span style="cursor: pointer;" onclick="openNav()"><img class="menu" src="images/menu.svg"></span>
     </header>
     <main>
         <div class="center">

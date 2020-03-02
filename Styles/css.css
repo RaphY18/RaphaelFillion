@@ -4,6 +4,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   opacity: 0;
   padding: 0;
@@ -197,12 +201,57 @@ div > p {
   margin: 3em auto;
 }
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(234,234,234);
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 70px;
+  color: #eaeaea;
+  display: block;
+  transition: 0.3s;
+  text-shadow: 3px 3px 5px rgba(94, 104, 121, 0.4),
+    -3px -3px 5px rgba(255, 255, 255, 1);
+}
+
+.overlay a:hover, .overlay a:focus {
+  text-shadow: 3px 3px 5px rgba(255, 255, 255, 1),
+    -3px -3px 5px rgba(94, 104, 121, 0.4);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 .menu {
   float: right;
   height: auto;
-  width: 20px;
-  display: none;
+  margin: 4.5em 5em 0 0;
+  width: 30px;
 }
+
 
 @media only screen and (max-width: 1550px){
   div > p {
@@ -229,7 +278,7 @@ div > p {
   }
 }
 
-@media only screen and (max-width: 1120px){
+@media only screen and (max-width: 1150px){
   nav li {
     margin-left: 30px;
   }
@@ -277,12 +326,63 @@ div > p {
   }
 }
 
-@media screen and (max-width: 943px){
+@media only screen and (max-width: 654px){
   .menu {
-    display: none;
-    cursor: pointer;
+    margin: 3.8em 2em 0 0;
   }
+  .LowerText {
+    margin: 0 100px;
+  }
+  div > p {
+    padding: 0;
+    padding: 0 30px;
+  }
+  .propos {
+    margin-bottom: 0;
+  }
+  .borderNeumorphism {
+    margin-top: 0;
+  }
+  form {
+    width: 400px;
+  }
+  .logo {
+    width: 250px;
+  }
+}
 
-  
+@media only screen and (max-width: 654px){
+  .logo {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .menu {
+    margin: 2.8em 1.2em 0 0;
+  }
+  div > p {
+    font-size: 3em;
+  }
+  .newMorphism {
+    text-shadow: 3px 3px 5px rgba(94, 104, 121, 0.4),
+      -3px -3px 5px rgba(255, 255, 255, 1);
+  }
+  .newMorphism_Projets {
+    font-size: 1.5em;
+    text-shadow: 3px 3px 5px rgba(94, 104, 121, 0.4),
+      -3px -3px 5px rgba(255, 255, 255, 1);
+  }
+  .LowerText {
+    font-size: 1.3em;
+    margin: 0 70px;
+  }
+  .overlay a {
+    font-size: 50px;
+  }
+  form {
+    width: 300px;
+  }
+  .propos {
+    margin: 0 0.2em;
+  }
 }
 
