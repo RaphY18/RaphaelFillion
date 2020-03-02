@@ -10,23 +10,22 @@
     <link rel="stylesheet" href="w3.css" />
     <link rel="stylesheet" href="Styles/css.css" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  
     <title>Rfillion</title>
 </head>
 
 <body onload="document.body.style.opacity='1'">
     <header>
-        <div class="cursor"></div>
         <div class="logoPlacement">
             <a href="index.html"><img src="images/Logo_Website.png" alt="logo" class="logo" /></a>
         </div>
         <nav>
             <ul>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="propos.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rapha%C3%ABl-fillion-5224b0179/" target="_blank">Linkedin</a>
-                </li>
+                <li class="navbar"><a href="projets.html">Projets</a></li>
+                <li class="navbar"><a href="propos.html">À propos</a></li>
+                <li class="navbar"><a href="contact.html">Contact</a></li>
+                <li class="navbar"><a href="https://www.linkedin.com/in/rapha%C3%ABl-fillion-5224b0179/" target="_blank">Linkedin</a></li>
+                <li><img src="images/menu.svg" class="menu"></li>
             </ul>
         </nav>
     </header>
@@ -40,8 +39,11 @@
                 Il fallait créer une publicité "Pop-up" et une bannière.
             </p>
         </div>
-        <img src="images/Pub_Updated.png" width="100%" style="padding: 10em 10em 1em 10em;"/>
-        <img src="images/Banniere.png" width="100%" style="padding: 1em 10em 10em 10em;"/>
+        <div class="borderNeumorphism">
+            <img width="100%" src="images/Pub_Updated.png"/> <br/><br/>
+            <img width="100%" src="images/Banniere.png"/>
+        </div>
+        
     </main>
     <footer></footer>
     <script defer type="text/javascript" src="Javascript/javascript.js"></script>

@@ -10,23 +10,22 @@
     <link rel="stylesheet" href="w3.css" />
     <link rel="stylesheet" href="Styles/css.css" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+ 
     <title>Rfillion</title>
 </head>
 
 <body onload="document.body.style.opacity='1'">
     <header>
-        <div class="cursor"></div>
         <div class="logoPlacement">
             <a href="index.html"><img src="images/Logo_Website.png" alt="logo" class="logo" /></a>
         </div>
         <nav>
             <ul>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="propos.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rapha%C3%ABl-fillion-5224b0179/" target="_blank">Linkedin</a>
-                </li>
+                <li class="navbar"><a href="projets.html">Projets</a></li>
+                <li class="navbar"><a href="propos.html">À propos</a></li>
+                <li class="navbar"><a href="contact.html">Contact</a></li>
+                <li class="navbar"><a href="https://www.linkedin.com/in/rapha%C3%ABl-fillion-5224b0179/" target="_blank">Linkedin</a></li>
+                <li><img src="images/menu.svg" class="menu"></li>
             </ul>
         </nav>
     </header>
@@ -40,9 +39,16 @@
                 avons altérer les images pour faire croire que nous avions des
                 pouvoirs magiques. Mon personnage peut contrôler le feu, tandis que
                 celui de mon camarade contrôle la glace. Avec tout ça en main, j'ai
-                fait le montage du générique. Voici le <a href="https://youtu.be/iuJEiTqBihI" target="_blank">vidéo</a>.
+                fait le montage du générique.
             </p>
         </div>
+
+        <div>
+            <iframe src="https://www.youtube.com/embed/iuJEiTqBihI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
         <div class="slideshow-container">
             <div class="mySlides  w3-animate-opacity">
                 <img src="images/raphael_philippe_combat.png" width="100%" />
@@ -51,14 +57,14 @@
                 <img src="images/raphael_flamèche_.png" width="100%" />
             </div>
             <div class="mySlides w3-animate-opacity">
-               <img src="images/raphael_philippe_etatdepenser.png" width="100%" />
+                <img src="images/raphael_philippe_etatdepenser.png" width="100%" />
             </div>
             <div class="mySlides w3-animate-opacity">
                 <img src="images/raphael_pouvoir.png" width="100%" />
-             </div>
-             <div class="mySlides w3-animate-opacity">
+            </div>
+            <div class="mySlides w3-animate-opacity">
                 <img src="images/raphael_preparation.png" width="100%" />
-             </div>
+            </div>
         </div>
     </main>
     <footer></footer>
